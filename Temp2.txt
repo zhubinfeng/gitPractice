@@ -1,0 +1,19 @@
+1. 不需要多窗口（multiple windows）
+如果需要支持iOS 13 及之前多个版本的iOS，且又不需要多个窗口的功能，可以***删除项目info.plist文件中的Application Scene Manifest的配置数据***，AppDelegate中关于Scene的代理方法、SceneDelegate的类是否删除都可以。
+如果使用纯代码来实现显示界面，需要在AppDelegate.h中手动添加window属性，添加以下代码即可：
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+  
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    [self.window setBackgroundColor:[UIColor whiteColor]];
+    
+    ViewController *con = [[ViewController alloc] init];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:con];
+    [self.window setRootViewController:nav];
+    [self.window makeKeyAndVisible];
+    return YES;
+}
+
+作者：QiShare
+链接：https://juejin.im/post/5db6fb53f265da4d226e25f0
+来源：掘金
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
