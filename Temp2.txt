@@ -12,9 +12,5 @@
     [self.window makeKeyAndVisible];
     return YES;
 }
- Test add
-<<<<<<< HEAD
-Push test 2
-=======
+ Test addPush test 2
 push test
->>>>>>> 8711e1eea4c7c47d071e201eb35ff6218fec5583
