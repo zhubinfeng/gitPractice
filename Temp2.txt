@@ -12,6 +12,9 @@
     [self.window makeKeyAndVisible];
     return YES;
 }
- Test add
-Push test 2
-Add again
+
+git rebase --onto reseult
+
+git push origin zbf -f
+
+git revert
