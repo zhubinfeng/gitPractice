@@ -12,11 +12,6 @@
     [self.window makeKeyAndVisible];
     return YES;
 }
+add satged
 
-git rebase --onto reseult
-<<<<<<< HEAD
-
-
-git rever
-=======
->>>>>>> parent of 845d14b... push
+add workarea
