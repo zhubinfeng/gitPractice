@@ -16,3 +16,5 @@
 git rebase --onto reseult
 
 git push origin zbf -f
+
+git revert
