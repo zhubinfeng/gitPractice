@@ -14,6 +14,9 @@
 }
 
 git rebase --onto reseult
+<<<<<<< HEAD
 
 
 git rever
+=======
+>>>>>>> parent of 845d14b... push
